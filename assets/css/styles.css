@@ -242,7 +242,7 @@ body.dark-theme {
 }
 
 .profile__buttons-small {
-  column-gap: .25rem;
+  column-gap: 1.25rem;
 }
 
 /*=============== BUTTONS ===============*/
@@ -252,7 +252,7 @@ body.dark-theme {
   column-gap: .5rem;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1.15rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: .5rem;
   transition: .3s;
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
@@ -515,6 +515,9 @@ body.dark-theme {
     width: 90px;
   }
   .profile__profession {
+    margin-bottom: 1.5rem;
+  }
+  .profile__profession_1 {
     margin-bottom: 1.5rem;
   }
   .profile__info {
