@@ -1,9 +1,17 @@
-title: Suvan Banerjee
-description: My Portfolio
+title: ""
+description: ""
 baseurl: ""
+url: ""
 
-theme: hacked-jekyll
+lowercase: true
+color_bg: var(--oc-gray-9)
+color_punct: var(--oc-green-9)
+color_keyval: var(--oc-green-4)
+color_hover: var(--oc-green-5)
+show_quotes: true
+show_commas: true
+target: "_self"
 
-exclude:
-  - LICENSE
-  - README.md
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
