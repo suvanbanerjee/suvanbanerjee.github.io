@@ -1,0 +1,9 @@
+title: Suvan Banerjee
+description: My Portfolio
+baseurl: ""
+
+theme: hacked-jekyll
+
+exclude:
+  - LICENSE
+  - README.md
