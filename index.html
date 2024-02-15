@@ -1,350 +1,79 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Suvan | Portfolio</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            
-                            <img src="assets/img/pic.png" alt="">
-                        </div>
-                    </div>
-
-                    <h2 class="profile__name">Suvan Banerjee</h2>
-                    <h3 class="profile__profession">Sophomore@DSCE | Aspiring Developer</h3>
-
-                    <ul class="profile__social">
-                        
-                        <a href="https://www.linkedin.com/in/suvanbanerjee" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
-                        <a href="https://github.com/suvanbanerjee" target="_blank" class="profile__social-link">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                    </ul>
-                </div>
-
-
-            <!-- Add some meaningfull info like GPA Projects etc
-
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">0</h3>
-                        <p class="profile__info-description">
-                            Some <br> number
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">0</h3>
-                        <p class="profile__info-description">
-                            Some <br> number
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">0</h3>
-                        <p class="profile__info-description">
-                            Some <br> number
-                        </p>
-                    </div>
-                </div>
-            -->
-            
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="https://suvanbanerjee.github.io/Resume/cv.pdf" class="button">
-                        Résumé <i class="ri-download-fill"></i>
-                    </a>
-
-                </div>
-            </div>
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
-                    </button>
-                </ul>
-
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/project1.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Python</span>
-                                    <h3 class="projects__title">Traffic Management System</h3>
-                                    <a href="https://github.com/suvanbanerjee/Smart-Traffic-System" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project2.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Python</span>
-                                    <h3 class="projects__title">SleepSense</h3>
-                                    <a href="https://github.com/suvanbanerjee/SleepSense" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project3.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Bash</span>
-                                    <h3 class="projects__title">Nmap Frontend</h3>
-                                    <a href="https://github.com/suvanbanerjee/nmap-frontend-cgi" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project4.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Bash</span>
-                                    <h3 class="projects__title">BetterBatteryUbuntu</h3>
-                                    <a href="https://github.com/suvanbanerjee/BetterBatteryUbuntu" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="projects__card">
-                            <img src="assets/img/project5.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Python</span>
-                                    <h3 class="projects__title">Tic-Tac-Toe</h3>
-                                    <a href="https://github.com/suvanbanerjee/TicTacToe" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">Frontend Developer</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">JavaScript</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--- 
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                       <div>
-                                            <h3 class="skills__name">React</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title">Backend Developer</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <!---
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">PHP</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                    -->
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                            <span class="skills__level">Advance</span>
-                                        </div>
-                                    </div>
-
-                                    <!---
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Firebase</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Python</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Node Js</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                 -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-
-            <div style="margin: 10px;padding: 5px;background-color: white;padding-left: 50px;padding-right: 50px;padding-top: 30px;border-radius: 50px;">
-            <center><h2>About Me</h2></center><br>
-
-            <p style="text-align: justify;">Hey there, I'm Suvan, a 19-year-old currently navigating the twists and turns of my sophomore year in college. Bengaluru, affectionately known as Namma Bengaluru, is where I call home during this exciting chapter of my life.<br><br></p>
-
-            <p style="text-align: justify;">As I make my way through the academic landscape, my enthusiasm for all things tech continues to grow. I'm not just a student; I'm a tech explorer, delving into the mysteries of both hardware and software. Currently, I'm immersing myself in the dynamic world of technology, exploring AI/ML, Networking, Sensors, and IoT. It's like being on a tech adventure, and I love every bit of it!<br><br></p>
-
-            <p style="text-align: justify;">But I'm not just skimming the surface. No, I'm going deep into the nitty-gritty details, peeling back layers down to the transistor level in the software realm. Understanding the intricacies of how computers function is not just a task for me—it's a journey to comprehend the digital world we live in.<br><br></p>
-
-            <p style="text-align: justify;">Beyond the fascinating world of algorithms and codes, I'm also making strides in my academic journey. Cybersecurity has become a significant focus, and I'm continuously refining my skills to keep up with the ever-evolving landscape of digital threats. Linux is also on my radar as I navigate its intricacies.<br><br></p>
-
-            <p style="text-align: justify;">When it comes to programming, I'm not just crunching code for assignments; I'm building bridges between ideas and reality. Python, C, and C++ are my trusted companions in this exciting journey. Additionally, I'm exploring the fundamentals of web development, adding another layer to my tech expertise.<br><br></p>
-
-            <p style="text-align: justify;">So, that's me—a college student with a passion for technology, education, and a desire to contribute meaningfully to the ever-evolving world of tech. Let's see where this exciting educational and tech-filled ride takes me!<br><br></p>
-            <br><br> 
-
-            </div>
-            <br><br> 
-                <center><h2>Missed Someting ?</h2></center>
-            <center><p class="profile__profession_1">Feel free to contact me for any queries or suggestions.</p></center>
-                <br>
-                <div class="profile__buttons-small">
-                        <a href="tel:+919462122507" target="_blank" class="button button__small button__gray">
-                        <i class="ri-phone-fill"></i>
-                    </a>
-                    <a href="sms:+919462122507" target="_blank" class="button button__small button__gray">
-                        <i class="ri-chat-1-fill"></i>
-                    </a>
-
-                    <a href="mailto:banerjeesuvan@gmail.com" target="_blank" class="button button__small button__gray">
-                        <i class="ri-mail-open-fill"></i>
-                    </a> 
-                </div>
-    
-        </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                Copy, Learn and Explore!<br> Source Code on GitHub
-            </span>
-        </footer>
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suvan | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main>
+    <div id="json">
+      <div class="my ms">
+        "<span class="key">Name</span>": "<span class="value">Suvan Banerjee</span>",
+      </div>
+      <div class="my ms">
+        <div id="strings">
+          <span>👋 नमस्ते world!</span>
+          <span>I'm Suvan, a 19-year-old currently navigating the twists and turns of my sophomore year in college. Bengaluru, affectionately known as Namma Bengaluru, is where I call home during this exciting chapter of my life.</span>
+          <span>When it comes to programming, I'm not just crunching code for assignments; I'm building bridges between ideas and reality. Python, C, and C++ are my trusted companions in this exciting journey. Additionally, I'm exploring the fundamentals of web development, adding another layer to my tech expertise.</span>
+          <span>So, that's me a college student with a passion for technology, education, and a desire to contribute meaningfully to the ever-evolving world of tech. Let's see where this exciting educational and tech-filled ride takes me!</span>
+        </div>
+        "<span class="key">Description</span>": "<span class="value"><span id="typed"></span></span>",
+      </div>
+      <div class="my ms">
+        <br>
+        "<span class="key">Résumé</span>": "<a class="value" href="https://suvanbanerjee.github.io/Resume/cv.pdf" target="_self">suvanbanerjee_cv.pd</a>",
+      </div>
+      <div class="my ms">
+        "<span class="key">Education</span>": [
+        <p class="ms">"<span class="value">Dayananda Sagar College of Enginering</span>",</p>
+        <p class="ms">"<span class="value">Information Science (2021-2025)</span>",</p>
+        ],
+      </div>
+      <div class="my ms">
+        "<span class="key">Contact</span>": [
+        <p class="ms">
+          "<span class="key">Email</span>": "<a class="value" href="mailto:banerjeesuvan@gmail.com" target="_self">banerjeesuvan@gmail.com</a>"
+        </p>
+        <p class="ms">
+          "<span class="key">another Email</span>": "<a class="value" href="mailto:1ds22is168@dsce.edu.in" target="_self">1ds22is168@dsce.edu.in</a>"
+        </p>
+        <p class="ms">
+          "<span class="key">Alternate Website</span>": "<a class="value" href="about.me/suvan" target="_self">about.me/suvan</a>"
+        </p>
+        ],
+      </div>
+      <div class="my ms">
+        "<span class="key">Profiles</span>": [
+        <p class="ms">
+          "<a class="value" href="https://www.linkedin.com/suvanbanerjee" target="_self">LinkedIn</a>",
+        </p>
+        <p class="ms">
+          "<a class="value" href="https://github.com/suvanbanerjee" target="_self">GitHub</a>"
+        </p>
+        <p class="ms">
+          "<a class="value" href="https://hashnode.com/@suvanbanerjee" target="_self">Hashnode</a>",
+        </p>
+        ]
+      </div>
+    </div><br><br>
+    <footer style="text-align: center; font-size: small; color: #42ff00;">
+      Copy, Learn and Explore!<br>
+      Source Code on <a href="http://github.com/suvanbanerjee/suvanbnerjee.github.io/">Github</a><br>
+      Made with ❤️ by Suvan Banerjee.
+    </footer>
+  </main>
+  <script src="assets/js/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#typed", {
+      stringsElement: "#strings",
+      backSpeed: 10,
+      typeSpeed: 50,
+      backDelay: 2000,
+      loop: false,
+      smartBackspace: true,
+    });
+  </script>
+</body>
 </html>
