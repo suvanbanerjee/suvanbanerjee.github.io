@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacked Jekyll</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="json">
+        <div class="my ms">
+          "<span class="key">Name</span>": "<span class="value">
+            Place Holder</span>",
+        </div>
+        <div class="my ms">
+          <div id="strings">
+            <span>Hello!</span>
+            <span>This tiny website</span>
+            <span>Looks like JSON</span>
+            <span></span>
+          </div>
+          "<span class="key">Description</span>": "<span class="value"
+            ><span id="typed"></span></span
+          >",
+        </div>
+        <div class="my ms">
+          "<span class="key">CV</span>": "<a
+            class="value"
+            href="/cv.pdf"
+            target="_self"
+            >cv.pdf</a
+          >",
+        </div>
+        <div class="my ms">
+          "<span class="key">Address</span>": [
+          <p class="ms">"<span class="value">University of Jekyll</span>",</p>
+          <p class="ms">"<span class="value">Department of Themes</span>",</p>
+          <p class="ms">
+            "<span class="value">123 Main St, Anytown, USA</span>"
+          </p>
+          ],
+        </div>
+        <div class="my ms">
+          "<span class="key">Contact</span>": [
+          <p class="ms">
+            "<span class="key">Office</span>": "<span class="value"
+              >Foobar Hall 1.23</span
+            >",
+          </p>
+          <p class="ms">
+            "<span class="key">Phone</span>": "<span class="value"
+              >+1 234 567 890</span
+            >",
+          </p>
+          <p class="ms">
+            "<span class="key">Email</span>": "<a
+              class="value"
+              href="mailto:username@domain.com"
+              target="_self"
+              >username@domain.com</a
+            >"
+          </p>
+          ],
+        </div>
+        <div class="my ms">
+          "<span class="key">Source</span>": "<a
+            class="value"
+            href="https://github.com/piazzai/hacked-jekyll"
+            target="_self"
+            >piaz</a
+          >",
+        </div>
+        <div class="my ms">
+          "<span class="key">Profiles</span>": [
+          <p class="ms">
+            "<a class="value" href="https://www.instagram.com" target="_self"
+              >Instagram</a
+            >",
+          </p>
+          <p class="ms">
+            "<a class="value" href="https://www.linkedin.com" target="_self"
+              >LinkedIn</a
+            >",
+          </p>
+          <p class="ms">
+            "<a class="value" href="https://stackoverflow.com" target="_self"
+              >StackOverflow</a
+            >",
+          </p>
+          <p class="ms">
+            "<a class="value" href="https://github.com" target="_self">GitHub</a
+            >"
+          </p>
+          ]
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#strings",
+        backSpeed: 30,
+        typeSpeed: 50,
+        backDelay: 2000,
+        loop: false,
+        smartBackspace: true,
+      });
+    </script>
+  </body>
+</html>
