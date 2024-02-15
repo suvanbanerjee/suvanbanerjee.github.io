@@ -14,19 +14,20 @@
   text-rendering: optimizeLegibility;
 }
 
+:root{
+  --bg: #000000;
+  --txt: #00d644;
+}
 
 body {
   font-family: "hack", monospace;
   font-size: 16px;
   font-weight: 400;
-  background-color: var(--oc-black);
-  color: var(--oc-white);
+  background-color: var(--bg);
+  color: var(--txt);
 }
 
-
-
-h1,
-p {
+h1,p {
   margin: 0;
 }
 
@@ -36,14 +37,14 @@ a {
 }
 
 a:hover {
-  color: var(--oc-black);
+  color: var(--bg);
 }
 a:active {
-  color: var(--oc-white);
+  color: var(--txt);
 }
 
 #json {
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 #json:before {
@@ -71,5 +72,5 @@ a:active {
 .key,
 .value {
   text-transform: lowercase;
-  color: var(--oc-white);
+  color: var(--txt);
 }
