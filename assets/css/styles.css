@@ -14,7 +14,7 @@
   text-rendering: optimizeLegibility;
 }
 
-:root{
+:root {
   --bg: #000000;
   --txt: #00d644;
 }
@@ -27,7 +27,7 @@ body {
   color: var(--txt);
 }
 
-h1,p {
+h1, p {
   margin: 0;
 }
 
@@ -39,6 +39,7 @@ a {
 a:hover {
   color: var(--bg);
 }
+
 a:active {
   color: var(--txt);
 }
@@ -73,4 +74,8 @@ a:active {
 .value {
   text-transform: lowercase;
   color: var(--txt);
+}
+
+#name {
+  font-family: 'Courier New', Courier, monospace;
 }
