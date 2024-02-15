@@ -14,9 +14,14 @@
   text-rendering: optimizeLegibility;
 }
 
-:root {
+.theme-dark {
   --bg: #000000;
   --txt: #42ff00;
+}
+
+.theme-light {
+  --bg: #ffffff;
+  --txt: #000000;
 }
 
 body {
@@ -73,4 +78,9 @@ a:active {
 .value {
   text-transform: lowercase;
   color: var(--txt);
+}
+
+#foot{
+  text-align: center;
+  font-size: 0.9em;
 }
