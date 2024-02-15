@@ -16,7 +16,7 @@
 
 :root {
   --bg: #000000;
-  --txt: #00d644;
+  --txt: #42ff00;
 }
 
 body {
@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: var(--bg);
+  color: var(--txt);
 }
 
 a:active {
@@ -69,13 +69,8 @@ a:active {
   margin-left: 1.5rem;
 }
 
-.error,
 .key,
 .value {
   text-transform: lowercase;
   color: var(--txt);
-}
-
-#name {
-  font-family: 'Courier New', Courier, monospace;
 }
