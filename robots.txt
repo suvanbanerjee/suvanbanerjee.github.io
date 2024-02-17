@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /
-Allow: /404.html
+Disallow: /404.html
