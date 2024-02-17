@@ -4,25 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects</title>
+  <meta name="description" content="Suvan Banerjee - Projects" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <main>
+    <div class="grain"></div>
     <div id="json">
       <div class="my ms">
-        "<span class="key">Projects</span>": [
+        "<span class="key">Projects</span>": [ <br><br>
         <p class="ms">
-          "<span class="key">Project 1</span>": "<span class="value">Sample Project 1</span>",
-        </p>
-        <p class="ms">
-          "<span class="key">Project 2</span>": "<span class="value">Sample Project 2</span>",
-        </p>
-        <p class="ms">
-          "<span class="key">Project 3</span>": "<span class="value">Sample Project 3</span>"
+          "<span class="key">Project Name</span>": "<span class="value">Hello World!</span>",<br>
+          "<span class="key">Tech Stack</span>": <span class="value">"Some cool tech" ,"another cool tech" ,"someting cooler"</span><br><br>
+          "<span class="key">Description</span>": "<span class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et beatae ex dicta illum culpa amet odio inventore quam placeat maxime ab harum, quae veritatis accusantium temporibus quia voluptas nesciunt ullam?</span>",<br><br>
+          "<span class="key">Source Code</span>": "<span class="value"><a class="value" href="https://example.com" target="_self">Demo Link</a></span>",<br><br>
         </p>
         ],
+        <br><br>
+        [ <br><br>
+        <p class="ms">
+          "<span class="key">Project Name</span>": "<span class="value">Hello World!</span>",<br>
+          "<span class="key">Tech Stack</span>": <span class="value">"Some cool tech" ,"another cool tech" ,"someting cooler"</span><br><br>
+          "<span class="key">Description</span>": "<span class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et beatae ex dicta illum culpa amet odio inventore quam placeat maxime ab harum, quae veritatis accusantium temporibus quia voluptas nesciunt ullam?</span>",<br><br>
+          "<span class="key">Source Code</span>": "<span class="value"><a class="value" href="https://example.com" target="_self">Demo Link</a></span>",<br><br>
+        </p>
+        ],
+        <br><br>
+        [ <br><br>
+        <p class="ms">
+          "<span class="key">Project Name</span>": "<span class="value">Hello World!</span>",<br>
+          "<span class="key">Tech Stack</span>": <span class="value">"Some cool tech" ,"another cool tech" ,"someting cooler"</span><br><br>
+          "<span class="key">Description</span>": "<span class="value">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et beatae ex dicta illum culpa amet odio inventore quam placeat maxime ab harum, quae veritatis accusantium temporibus quia voluptas nesciunt ullam?</span>",<br><br>
+          "<span class="key">Source Code</span>": "<span class="value"><a class="value" href="https://example.com" target="_self">Demo Link</a></span>",<br><br>
+        </p>
+        ]
       </div>
     </div>
+    <script>
+      var theme = localStorage.getItem('theme');
+      if (theme === 'theme-dark') {
+        setTheme('theme-dark');
+      } else {
+        setTheme('theme-light');
+      }
+
+      function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+      }
+
+      function toggleTheme() {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-light');
+        } else {
+          setTheme('theme-dark');
+        }
+      }
+      var typed = new Typed("#typed", {
+      stringsElement: "#strings",
+      backSpeed: 10,
+      typeSpeed: 50,
+      backDelay: 2000,
+      loop: false,
+      smartBackspace: true,
+    });
+    </script>
+    <script src="assets/js/typed.umd.js"></script>
   </main>
 </body>
 </html>

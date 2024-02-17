@@ -17,9 +17,9 @@
 }
 
 .theme-light {
-  --bg: #2e2317;
-  --txt: #fbce11;
-  --shadow: #ffff21;
+  --bg: #15262c;
+  --txt: #1ebddd;
+  --shadow: #00d5ff;
 }
 
 .theme-dark {
@@ -32,7 +32,7 @@ body {
   font-family: "hack", monospace;
   font-size: 16px;
   font-weight: 400;
-  text-shadow: 0 0 2px var(--shadow);
+  text-shadow: 0 0 3px var(--shadow);
   background-color: var(--bg);
   color: var(--txt);
 }
@@ -100,7 +100,7 @@ a {
   height: calc(100% + 20rem);
   z-index: -9999;
   position: fixed;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+  background-image: url(../noise.png);
   opacity: 0.15;
   pointer-events: none;
   -webkit-animation: noise 1s steps(2) infinite;
