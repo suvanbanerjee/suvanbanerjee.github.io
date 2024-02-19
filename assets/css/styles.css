@@ -1,5 +1,3 @@
-/* FILEPATH: /home/suvanbanerjee/Desktop/Projects/suvanbanerjee.github.io/assets/css/styles.css */
-
 @font-face {
   font-family: "hack";
   src: url("../webfonts/hack-regular-subset.woff2") format("woff2");
@@ -87,7 +85,6 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  pointer-event: none;
   z-index: -900;
   transform: translateZ(0);
 }
@@ -100,7 +97,7 @@ a {
   height: calc(100% + 20rem);
   z-index: -9999;
   position: fixed;
-  background-image: url(../noise.png);
+  background-image: url(../noise.webp);
   opacity: 0.15;
   pointer-events: none;
   -webkit-animation: noise 1s steps(2) infinite;
