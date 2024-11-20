@@ -1,0 +1,27 @@
+---
+import Card from '../Card.astro'
+import { Button } from '../ui/button'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+  <div class="flex w-full justify-center">
+    <div
+      class="card card-compact md:w-112 lg:w-128 w-96 gap-2 border-[oklch(var(--p))] transition-all"
+    >
+      <div class="flex flex-col gap-2">
+        <h2 class="text-3xl font-bold font-[GalSILB]">RESUME</h2>
+        <p class="font-[OldNewspaperTypes] text-justify break-words">
+          A résumé, sometimes spelled resume (or resumé), is a document created and used by a person to present their background, skills, and accomplishments. 
+        </p>
+        <div class="card-actions mt-2 flex w-full">
+          <a target="_blank" href='https://suvanbanerjee.github.io/resume'>
+            <Button>
+              <img src="/hand.png" alt="Retro Hand Icon" class="mr-2 h-5" />
+              <span class="font-bold font-[OldNewspaperTypes]">View Resume</span>
+            </Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>

@@ -1,0 +1,42 @@
+---
+import Card from '../Card.astro'
+import { Button } from '../ui/button'
+import { EXPERIENCE } from '../../lib/constants'
+import { STUDIES } from '../../lib/constants'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
+  <div class="mt-2 space-y-4">
+    <h2 class="text-3xl font-bold font-[GalSILB] mb-5">EXPERIENCE</h2>
+    {
+      EXPERIENCE.slice(0, 3).map((exp) => (
+        <div class="font-[OldNewspaperTypes]">
+          <h3 class="text-lg font-semibold">{exp.position}</h3>
+          <a class="" href={exp?.link ?? ''}>
+            {exp.company}
+          </a>
+          <p class="text-sm text-gray-600">
+            {exp.start} - {exp.end}
+          </p>
+        </div>
+      ))
+    }
+        <h2 class="text-3xl font-bold font-[GalSILB] pt-8">EDUCATION</h2>
+        {
+          STUDIES.slice(0, 1).map((exp) => (
+            <div class="font-[OldNewspaperTypes]">
+              <h3 class="text-lg font-semibold">{exp.institution}</h3>
+              <a class="" href={exp?.link ?? ''}>
+                {exp.title}
+              </a>
+              <p class="text-sm text-gray-600">
+                {exp.date}
+              </p>
+              <p class="text-sm">
+                SGPA - {exp.gpa}
+              </p>
+            </div>
+          ))
+        }
+  </div>
+</Card>
