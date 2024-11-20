@@ -1,0 +1,60 @@
+---
+import Card from '../Card.astro'
+import { Button } from '../ui/button'
+---
+
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-4">
+  <div class="flex flex-col gap-2">
+    <h2 class="text-3xl font-bold font-[GalSILB]">ABOUT ME</h2>
+    <p class="font-[OldNewspaperTypes] text-justify break-words">
+      <br />
+      <div class="flex justify-center">
+        <img
+          src="/me.jpg"
+          class="m-2 rounded-l max-w-[90%]"
+          alt="Suvan Banerjee"
+        />
+      </div>
+      <br />
+      <br />
+      <div class="font-[OldNewspaperTypes] text-justify break-words">
+      My primary tools of choice includes
+      <ul class="list-inside list-disc">
+        <li>C/C++</li>
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>React</li>
+        <li>Astro</li>
+        <li>Next.js</li>
+        <li>SQL</li>
+        <li>Flask</li>
+        <li>FastAPI</li>
+        <li>Supabase/Firebase</li>
+      </ul>
+      and many more.
+      </div>
+    </p>
+    <p class="font-[OldNewspaperTypes] text-justify break-words">
+      Beyond coding, I'm passionate about Social Work, Anime, Manga, and Art.
+    </p>
+    <h3 class="text-2xl mt-2 font-bold font-[GalSILB]">Find me on</h3>
+      <a target="_blank" href='https://suvanbanerjee.github.io/resume'>
+        <Button>
+          <img src="/hand.png" alt="Retro Hand Icon" class="mr-1 h-4" />
+          <span class="font-[OldNewspaperTypes]">GitHub</span>
+        </Button>
+      </a>
+      <a target="_blank" href='https://suvanbanerjee.github.io/resume'>
+        <Button>
+          <img src="/hand.png" alt="Retro Hand Icon" class="h-4" />
+          <span class="font-[OldNewspaperTypes]">Linkedin</span>
+        </Button>
+      </a>
+      <a target="_blank" href='https://suvanbanerjee.github.io/resume'>
+        <Button>
+          <img src="/hand.png" alt="Retro Hand Icon" class="mr-1 h-4" />
+          <span class="font-[OldNewspaperTypes]">Hashnode</span>
+        </Button>
+      </a>
+  </div>
+</Card>
