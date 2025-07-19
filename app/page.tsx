@@ -270,6 +270,7 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
+      <img src = "https://media.tenor.com/bhewUhwCTYYAAAAi/tux-linux-tux.gif" alt="Tux the penguin" className="-my-16 h-20 w-20" />
     </motion.main>
   )
 }
