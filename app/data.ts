@@ -94,6 +94,13 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'My Google Summer of Code 2025 Journey',
+    description: 'My experience building a Cloudcasting UI dashboard for Open Climate Fix during GSoC 2025 - from application to completion',
+    link: '/blog/gsoc25-journy',
+    uid: 'blog-2',
+    featured: true,
+  },
+  {
     title: 'Open Source Trail',
     description: 'How I started my open source journey from a small bug in GNOME extension to what I am doing now',
     link: '/blog/how-i-started-open-source',
