@@ -148,10 +148,10 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {PROJECTS.map((project) => (
+            {PROJECTS.filter(project => project.featured === true).map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <ProjectVideo src={project.video || ""} />
               </div>
               <div className="px-1">
                 <a
@@ -169,6 +169,13 @@ export default function Personal() {
               </div>
             </div>
           ))}
+          <div className="col-span-full mt-4 flex">
+            <Link href="/projects" passHref>
+              <span className="group relative inline-flex items-center gap-[1px] rounded-full bg-zinc-100 px-3 py-1.5 text-sm font-medium text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700">
+                View more projects
+              </span>
+            </Link>
+          </div>
         </div>
       </motion.section>
 
