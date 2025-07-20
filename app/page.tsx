@@ -137,7 +137,7 @@ export default function Personal() {
       >
         <div className="flex-1">
             <p className="text-zinc-600 dark:text-zinc-400">
-            Third-year computer science student from Bengaluru, India. Full-stack developer proficient in Python and JavaScript. Passionate about LLMs and AI technologies.
+              I'm a Final Year Information Science student from Bengaluru, India, and a full-stack developer with major focus on backend development in Python. I'm especially passionate about LLMs, AI, and building tools that make a difference :)
             </p>
         </div>
       </motion.section>
