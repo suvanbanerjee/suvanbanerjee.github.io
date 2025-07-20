@@ -19,6 +19,7 @@ type WorkExperience = {
   end: string
   link: string
   id: string
+  description?: string
 }
 
 type BlogPost = {
@@ -140,7 +141,16 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'BurdenOff Consultency Pvt. Ltd.',
+    company: 'Open Climate Fix',
+    title: 'Google Summer of Code 2025',
+    start: 'May 2025',
+    end: 'August 2025',
+    link: 'https://openclimatefix.org',
+    id: 'work0',
+    description: 'Building a Cloudcasting UI dashboard to visualize and analyze cloud cover data for renewable energy forecasting and grid optimization.',
+  },
+  {
+    company: 'BurdenOff Consultancy Pvt. Ltd.',
     title: 'Full Stack Intern',
     start: 'August 2024',
     end: 'Present',
@@ -154,6 +164,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     link: 'https://openvoiceos.org',
     id: 'work2',
+    description: 'Maintaining web-based projects including the OpenVoiceOS website, Skill Store, and Blog site. Contributing to various OpenVoiceOS initiatives.',
   },
 ]
 
@@ -192,7 +203,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: 'https://suvanbanerjee.me/resume',
   },
   {
-    label: 'Calendarly',
+    label: 'Calendly',
     link: 'https://calendly.com/suvanbanerjee',
   },
 ]
